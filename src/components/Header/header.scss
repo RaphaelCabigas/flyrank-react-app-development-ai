@@ -1,0 +1,33 @@
+@use '../../styles/variables' as *;
+
+.site-header {
+  text-align: center;
+  padding: 56px 20px 24px;
+
+  &__eyebrow {
+    display: inline-block;
+    font-family: $font-mono;
+    font-size: 12px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: $color-signature;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    font-family: $font-display;
+    font-weight: 700;
+    font-size: clamp(38px, 7vw, 64px);
+    letter-spacing: -0.02em;
+    margin: 0 0 12px;
+    color: $color-ink;
+  }
+
+  &__subtitle {
+    max-width: 480px;
+    margin: 0 auto;
+    color: $color-ink-soft;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}

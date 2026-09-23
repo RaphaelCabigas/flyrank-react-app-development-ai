@@ -1,0 +1,16 @@
+// Design tokens for Palette Poet.
+// UI chrome stays quiet and dark so the *generated* palette is always
+// the most saturated thing on screen -- it's the content, not decoration.
+
+$color-canvas: #14121b;
+$color-surface: #1c1826;
+$color-border: #2c2536;
+$color-ink: #f2ede6;
+$color-ink-soft: #9a92a8;
+
+$color-signature: #2ee6a8;
+$color-signature-bright: #57f2bc;
+
+$font-display: 'Space Grotesk', 'Avenir Next', 'Segoe UI', system-ui, sans-serif;
+$font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+$font-mono: 'IBM Plex Mono', ui-monospace, 'Courier New', monospace;

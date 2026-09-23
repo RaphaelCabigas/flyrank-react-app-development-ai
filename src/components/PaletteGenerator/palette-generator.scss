@@ -1,0 +1,81 @@
+@use '../../styles/variables' as *;
+
+.palette-generator {
+  text-align: center;
+
+  &__scheme {
+    margin: 0;
+    font-family: $font-mono;
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $color-signature;
+  }
+
+  &__mood {
+    margin: 4px 0 28px;
+    font-family: $font-display;
+    font-weight: 600;
+    font-size: clamp(28px, 5vw, 44px);
+    letter-spacing: -0.01em;
+    color: $color-ink;
+  }
+
+  &__swatches {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  font-family: $font-body;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
+
+  &:active {
+    transform: scale(0.97);
+  }
+
+  &--primary {
+    background: $color-signature;
+    color: $color-canvas;
+
+    &:hover {
+      background: $color-signature-bright;
+    }
+  }
+
+  &--ghost {
+    background: transparent;
+    color: $color-ink;
+    border-color: $color-border;
+
+    &:hover:not(:disabled) {
+      border-color: $color-signature;
+      color: $color-signature;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
